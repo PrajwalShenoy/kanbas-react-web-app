@@ -1,28 +1,64 @@
+.wd-main-frame {
+    display:flex;
+}
 
 .wd-sidebar-column {
     display: flex;
-}
-
-.wd-sidebar-containers {
-    background: black;
-    width: 85px;
-    justify-content: end;
-}
-
-.wd-sidebar-container-item {
-    /* height: 85px; */
-    align-self: center;
-}
-
-.wd-sidebar-links {
-    display: flex;
     flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    padding-top: 15px;
+    background-color: black;
+    width: 85px;
+    height: 100vh;
+    position: sticky;
+    left: 0px;
+    top: 0px;
 }
 
-.wd-sidebar-icons {
-    font-size: 40px;
+.wd-sidebar-column > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* flex-basis: 85px; */
+    color: white;
+}
+
+.wd-sidebar-column > a > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.wd-sidebar-column > a > div > i {
+    font-size: 30px;
+    color: rgb(236, 48, 48);
+}
+
+.wd-sidebar-column > a > div > .fa-user {
+    font-size: 30px;
+    color: rgb(175, 175, 175);
+}
+
+.wd-sidebar-column > a > div > span {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.wd-sidebar-item-selected {
+    background-color: white;
+    color: rgb(236, 48, 48);
+}
+
+.wd-sidebar-item-selected > div > span{
+    color: rgb(236, 48, 48);
+}
+
+.box {
+    width: 85px;
+    color: rgb(236, 48, 48);
+    font-weight: 600;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0px;
+    /* background-color: rgb(236, 48, 48); */
 }

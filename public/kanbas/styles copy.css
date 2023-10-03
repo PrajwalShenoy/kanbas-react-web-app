@@ -1,0 +1,28 @@
+
+.wd-sidebar-column {
+    display: flex;
+}
+
+.wd-sidebar-containers {
+    background: black;
+    width: 85px;
+    justify-content: end;
+}
+
+.wd-sidebar-container-item {
+    /* height: 85px; */
+    align-self: center;
+}
+
+.wd-sidebar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+}
+
+.wd-sidebar-icons {
+    font-size: 40px;
+}
