@@ -1,5 +1,10 @@
 .wd-main-frame {
-    display:flex;
+    display: flex;
+}
+
+.wd-secondary-frame {
+    display: block;
+    width: -webkit-fill-available;
 }
 
 .wd-sidebar-column {
@@ -11,9 +16,10 @@
     position: sticky;
     left: 0px;
     top: 0px;
+    margin-right: 25px;
 }
 
-.wd-sidebar-column > a {
+.wd-sidebar-column>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,24 +28,24 @@
     color: white;
 }
 
-.wd-sidebar-column > a > div {
+.wd-sidebar-column>a>div {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 10px;
 }
 
-.wd-sidebar-column > a > div > i {
+.wd-sidebar-column>a>div>i {
     font-size: 30px;
     color: rgb(236, 48, 48);
 }
 
-.wd-sidebar-column > a > div > .fa-user {
+.wd-sidebar-column>a>div>.fa-user {
     font-size: 30px;
     color: rgb(175, 175, 175);
 }
 
-.wd-sidebar-column > a > div > span {
+.wd-sidebar-column>a>div>span {
     margin-top: 5px;
     font-size: 12px;
 }
@@ -49,16 +55,112 @@
     color: rgb(236, 48, 48);
 }
 
-.wd-sidebar-item-selected > div > span{
+.wd-sidebar-item-selected>div>span {
     color: rgb(236, 48, 48);
 }
+
+/* ========================================================================== */
+/* AccountColumnsOnly */
+
+.wd-name-header {
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wd-secondary-column {}
+
+.wd-secondary-column-list {
+    width: 250px;
+    padding-left: 0px;
+}
+
+.wd-secondary-column-list>li {
+    list-style: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.wd-secondary-column-list>li>a {
+    text-decoration: none;
+    color: rgb(236, 48, 48);
+    font-size: 15px;
+}
+
+.wd-secondary-column-item-selected {
+    border-style: solid;
+    border-color: rgb(128, 128, 128);
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* Profile page */
+
+.wd-profile-info-col {
+    width: 600px;
+}
+
+.wd-profile-info-col>div {
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-profile-info-col>div>a {
+    text-decoration: none;
+    color: rgb(236, 48, 48);
+}
+
+.wd-button-container {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+}
+
+/* ========================================================================== */
+/* Customization for bootstrap */
+
+.btn-danger {
+    background-color: rgb(236, 48, 48);
+    border-color: rgb(236, 48, 48);
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: rgb(170, 34, 34);
+    border-color: rgb(170, 34, 34);
+    color: #fff;
+  }
+
+/* ========================================================================== */
+/* ========================================================================== */
 
 .box {
     width: 85px;
     color: rgb(236, 48, 48);
     font-weight: 600;
     font-size: 60px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     /* background-color: rgb(236, 48, 48); */
+}
+
+.wd-make-block {
+    display: block;
+}
+
+.wd-make-flex {
+    display: flex;
+}
+
+.bigSquare {
+    width: 85px;
+    height: 85px;
+    color: rgb(236, 48, 48);
+    background-color: blue;
 }
