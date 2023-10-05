@@ -245,7 +245,7 @@
 .wd-assignment-edit-table {
 
 }
-
+public/kanbas/home.html
 .wd-assignment-edit-table-key {
     text-align: right;
     /* width: 100px; */
@@ -275,6 +275,18 @@
 /* ========================================================================== */
 
 /* ========================================================================== */
+/* Home */
+.wd-home-list {
+    width: 1200px;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left-width: 5px;
+    border-left-color: rgb(35, 139, 14);
+    list-style: none;
+}
+
 /* ========================================================================== */
 
 .box {
@@ -297,6 +309,11 @@
 
 .wd-align-items-center {
     align-items: center;
+}
+
+.wd-red-link {
+    text-decoration: none;
+    color:rgb(236, 48, 48)
 }
 
 .bigSquare {
