@@ -316,6 +316,11 @@ public/kanbas/home.html
     color:rgb(236, 48, 48)
 }
 
+.wd-red-link:hover {
+    text-decoration: underline;
+    color:rgb(170, 34, 34);
+}
+
 .bigSquare {
     width: 85px;
     height: 85px;
