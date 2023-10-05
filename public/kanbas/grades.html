@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,228 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/be17622803.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <table width="100%">
+    <div class="wd-main-frame">
+        <div class="wd-sidebar-column">
+            <a href="#">
+                <div class="box">N</div>
+                <!-- <div>
+                            <i class="fa-brands fa-html5 wd-sidebar-icons" style="color: #828282;"></i>
+                        </div> -->
+            </a>
+            <a href="./accountColumnsOnly.html">
+                <div>
+                    <i class="fa-solid fa-user wd-sidebar-icons"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a href="./courses/index.html">
+                <div>
+                    <i class="fa-solid fa-gauge wd-sidebar-icons"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <a class="wd-sidebar-item-selected" href="./firstTwoColumnsOnly.html">
+                <div>
+                    <i class="fa-solid fa-book wd-sidebar-icons"></i>
+                    <span>Courses</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-calendar-days wd-sidebar-icons"></i>
+                    <span>Calender</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-inbox wd-sidebar-icons"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-clock wd-sidebar-icons"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-film wd-sidebar-icons"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-brands fa-creative-commons wd-sidebar-icons"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-circle-info wd-sidebar-icons"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+        </div>
+        <div class="wd-secondary-frame">
+            <div class="wd-make-flex mt-3">
+                <a class="wd-hamburger me-4" href="#"><i class="fa-solid fa-bars"></i></a>
+                <nav class="wd-main-breadcrumbs-nav" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">CS56610.11744.202310</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="wd-make-flex">
+                <ul class="wd-secondary-column-list">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="./assignments/index.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li class="wd-secondary-column-item-selected"><a href="./grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Penapto Videos</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="./settings/index.html">Settings</a></li>
+                </ul>
+                <div class="wd-assignment-main-panel">
+                    <div class="wd-make-flex" style="float: right;">
+                        <select class="form-control" style="width: fit-content;">
+                            <option value="VAL1">Value 1</option>
+                            <option value="GRADEBOOK" selected>
+                                Gradebook</option>
+                            <option value="VAL3">Value 3</option>
+                        </select>
+                        <button type="button" class="btn btn-light">
+                            <i class="fa-solid fa-file-import" style="color: #8f8f8f;"></i>
+                            Import</button>
+                        <select class="form-control" style="width: fit-content;">
+                            <option value="VAL1">Value 1</option>
+                            <option value="EXPORT" selected>
+                                <div>
+                                    <i class="fa-solid fa-file-export" style="color: #8f8f8f;"></i>
+                                    Export
+                                </div>
+                            </option>
+                            <option value="VAL3">Value 3</option>
+                        </select>
+                        <button type="button" class="btn btn-light">
+                            <i class="fa-solid fa-gear" style="color: #8f8f8f;"></i>
+                        </button><br>
+                    </div>
+                    <div>
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col">Student Name</th>
+                                <th scope="col">Assignment Names</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                    <div class="wd-make-flex wd-align-items-center">
+                                        <i class="fa-solid fa-magnifying-glass me-2" style="color: #8f8f8f;"></i>
+                                        <input type="text" class="form-control" id="studentName" placeholder="Search Student">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="wd-make-flex wd-align-items-center">
+                                        <i class="fa-solid fa-magnifying-glass me-2" style="color: #8f8f8f;"></i>
+                                        <input type="text" class="form-control" id="assignmentName" placeholder="Search Assignment">
+                                    </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <button class="btn btn-light" type="button">
+                        <i class="fa-solid fa-filter" style="color: #8f8f8f;"></i>
+                        Apply Filters
+                    </button>
+                    <table class="table table-striped" width="100%">
+                        <thead>
+                            <tr class="wd-grade-table-header">
+                                <th>Student Name</th>
+                                <th>A1 SETUP<br>Out of 100</th>
+                                <th>A2 HTML<br>Out of 100</th>
+                                <th>A3 CSS<br>Out of 100</th>
+                                <th>A4 BOOTSTRAP<br>Out of 100</th>
+                                <th>A5 JAVASCRIPT<br>Out of 100</th>
+                                <th>A6 REACT<br>Out of 100</th>
+                                <th>A7 REDUX<br>Out of 100</th>
+                                <th>A8 NODE<br>Out of 100</th>
+                                <th>A9 MONGO<br>Out of 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="wd-table-name-column">Prajwal Shenoy</td>
+                                <td><input class="form-control" type="number" value=100></td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td class="wd-table-name-column">Sanath Naik</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td><input class="form-control" type="number" value=100></td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td class="wd-table-name-column">Eshwar Hebbur</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td><input class="form-control" type="number" value=100></td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td class="wd-table-name-column">Aditya Mehta</td>
+                                <td>100</td>
+                                <td><input class="form-control" type="number" value=100></td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <table width="100%">
         <tbody>
             <td width="15%" style="vertical-align: top;">
                 <ul>
@@ -139,6 +360,7 @@
             </td>
         </tbody>
     </table>
-    
+     -->
 </body>
+
 </html>
