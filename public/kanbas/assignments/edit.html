@@ -15,30 +15,89 @@
 </head>
 
 <body>
-    <table width="100%">
-        <tbody>
-            <td width="15%" style="vertical-align: top;">
-                <ul>
-                    <li><a href="../accountColumnsOnly.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../firstTwoColumnsOnly.html">Courses</a></li>
-                    <li><a href="#">Calender</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td width="15%" style="vertical-align: top;">
-                <ul>
-                    <li><a href="../home.html">Home</a></li>
+    <div class="wd-main-frame">
+        <div class="wd-sidebar-column">
+            <a href="#">
+                <div class="box">N</div>
+                <!-- <div>
+                            <i class="fa-brands fa-html5 wd-sidebar-icons" style="color: #828282;"></i>
+                        </div> -->
+            </a>
+            <a href="./accountColumnsOnly.html">
+                <div>
+                    <i class="fa-solid fa-user wd-sidebar-icons"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a href="./courses/index.html">
+                <div>
+                    <i class="fa-solid fa-gauge wd-sidebar-icons"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <a class="wd-sidebar-item-selected" href="./firstTwoColumnsOnly.html">
+                <div>
+                    <i class="fa-solid fa-book wd-sidebar-icons"></i>
+                    <span>Courses</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-calendar-days wd-sidebar-icons"></i>
+                    <span>Calender</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-inbox wd-sidebar-icons"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-clock wd-sidebar-icons"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-film wd-sidebar-icons"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-brands fa-creative-commons wd-sidebar-icons"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <i class="fa-solid fa-circle-info wd-sidebar-icons"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+        </div>
+        <div class="wd-secondary-frame">
+            <div class="wd-make-flex mt-3">
+                <a class="wd-hamburger me-4" href="#"><i class="fa-solid fa-bars"></i></a>
+                <nav class="wd-main-breadcrumbs-nav" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">CS56610.11744.202310</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="wd-make-flex">
+                <ul class="wd-secondary-column-list">
+                    <li><a href="./home.html">Home</a></li>
                     <li><a href="#">Modules</a></li>
                     <li><a href="#">Piazza</a></li>
                     <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="../assignments/index.html">Assignments</a></li>
+                    <li class="wd-secondary-column-item-selected"><a href="./assignments/index.html">Assignments</a>
+                    </li>
                     <li><a href="#">Quizzes</a></li>
-                    <li><a href="../grades.html">Grades</a></li>
+                    <li><a href="./grades.html">Grades</a></li>
                     <li><a href="#">People</a></li>
                     <li><a href="#">Penapto Videos</a></li>
                     <li><a href="#">Discussions</a></li>
@@ -49,118 +108,163 @@
                     <li><a href="#">Outcomes</a></li>
                     <li><a href="#">Collaborations</a></li>
                     <li><a href="#">Syllabus</a></li>
-                    <li><a href="../settings/index.html">Settings</a></li>
+                    <li><a href="./settings/index.html">Settings</a></li>
                 </ul>
-            </td>
-            <td width="80%" style="vertical-align: top;">
-                <select>
-                    <option value="VAL1">Value 1</option>
-                    <option value="GRADEBOOK" selected>Speed Grader</option>
-                    <option value="VAL3">Value 3</option>
-                </select>
-                <h2>Assignment Name</h2>
-                <input type="text" value="A1 - ENV + HTML"><br>
-                <textarea cols="40" rows="2" value="This is the assignment description"
-                    title="tooltip">This is the assignment description</textarea><br>
-                <p>
-                    Points<br>
-                    <input type="text" value="100"><br>
-                </p>
-                <p>
-                    Assignment Group<br>
-                    <select>
-                        <option value="VAL1">Value 1</option>
-                        <option value="GRADEBOOK" selected>ASSIGNMENTS</option>
-                        <option value="VAL3">Value 3</option>
-                    </select>
-                </p>
-                <p>
-                    Display grade as<br>
-                    <select>
-                        <option value="VAL1">Value 1</option>
-                        <option value="GRADEBOOK" selected>Percentage</option>
-                        <option value="VAL3">Value 3</option>
-                    </select>
-                </p>
-                <p>
-                    Submission Type<br>
-                    <select>
-                        <option value="VAL1">Value 1</option>
-                        <option value="GRADEBOOK" selected>Online</option>
-                        <option value="VAL3">Value 3</option>
-                    </select>
-                </p>
-                <p>
-                    Online Entry Options<br>
-                    <input type="checkbox" value="1" name="check-genre" id="chkbox-1" />
-                    <label for="chkbox-1">Text Entry</label> <br />
-                    <input type="checkbox" value="2" name="check-genre" id="chkbox-2" />
-                    <label for="chkbox-2">Website URL</label> <br />
-                    <input type="checkbox" value="3" name="check-genre" id="chkbox-3" />
-                    <label for="chkbox-3">Media Recordings</label> <br />
-                    <input type="checkbox" value="4" name="check-genre" id="chkbox-4" />
-                    <label for="chkbox-4">Student Annotation</label> <br />
-                    <input type="checkbox" value="5" name="check-genre" id="chkbox-5" />
-                    <label for="chkbox-5">File Upload</label>
-                </p>
-                <p>
-                    Submission Attempts<br>
-                    <select>
-                        <option value="VAL1">Value 1</option>
-                        <option value="GRADEBOOK" selected>Unlimited</option>
-                        <option value="VAL3">Value 3</option>
-                    </select>
-                </p>
-                <p>
-                    Plagiarism Review<br>
-                    <select>
-                        <option value="VAL1">Value 1</option>
-                        <option value="GRADEBOOK" selected>None</option>
-                    </select>
-                </p>
-                <p>
-                    Group Assignment<br>
-                    <input type="checkbox" value="1" name="check-genre" id="chkbox-1" />
-                    <label for="chkbox-1">This is group assignment</label>
-                </p>
-                <p>
-                    Peer Reviews<br>
-                    <input type="checkbox" value="1" name="check-genre" id="chkbox-1" />
-                    <label for="chkbox-1">Require Peer Reviews</label>
-                </p>
-                <p>
-                    Assign<br>
-                    Assign to<br>
-                    <input type="text" value="Everyone" />
-                </p>
-
-                <p>
-                    <label for="text-fields-due">
-                        Due
-                    </label><br>
-                    <input type="date" id="text-fields-dob" value="2000-01-21" /><br />
-                </p>
-
-                <p>
-                    <label for="text-fields-af">
-                        Available from
-                    </label><br>
-                    <input type="date" id="text-fields-af" value="2000-01-21" /><br />
-                </p>
-
-                <p>
-                    <label for="text-fields-ad">
-                        Until
-                    </label><br>
-                    <input type="date" id="text-fields-ad" value="2000-01-21" /><br />
-                </p>
-                <a href="./index.html"><button type="button">Cancel</button></a>
-                <button type="button">Save</button>
-
-            </td>
-        </tbody>
-    </table>
-
+                <div class="wd-assignment-main-panel">
+                    <div class="wd-page-items mt-4">
+                        <!-- <select>
+                                <option value="VAL1">Value 1</option>
+                                <option value="GRADEBOOK" selected>Speed Grader</option>
+                                <option value="VAL3">Value 3</option>
+                            </select> -->
+                        <div class="mb-3">
+                            <label for="assignmentName" class="form-label">Assignment Name</label>
+                            <input type="text" class="form-control" id="assignmentName" placeholder="A1-ENV + HTML">
+                        </div>
+                        <textarea class="form-control" cols="40" rows="5" value="This is the assignment description"
+                            title="tooltip">This is the assignment description</textarea>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Points</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <input class="form-control" type="text" value="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Assignment Group</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <select >
+                                                <option value="VAL1">Value 1</option>
+                                                <option value="GRADEBOOK" selected>ASSIGNMENTS</option>
+                                                <option value="VAL3">Value 3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Display grade as</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <select>
+                                                <option value="VAL1">Value 1</option>
+                                                <option value="GRADEBOOK" selected>Percentage</option>
+                                                <option value="VAL3">Value 3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Submission Type</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <select class="mb-3">
+                                                <option value="VAL1">Value 1</option>
+                                                <option value="GRADEBOOK" selected>Online</option>
+                                                <option value="VAL3">Value 3</option>
+                                            </select><br>
+                                            <h6>Online Entry Options</h6>
+                                            <input type="checkbox" value="1" name="check-genre" id="chkbox-1" />
+                                            <label class="form-label" for="chkbox-1">Text Entry</label> <br />
+                                            <input type="checkbox" value="2" name="check-genre" id="chkbox-2" />
+                                            <label class="form-label" for="chkbox-2">Website URL</label> <br />
+                                            <input type="checkbox" value="3" name="check-genre" id="chkbox-3" />
+                                            <label class="form-label" for="chkbox-3">Media Recordings</label> <br />
+                                            <input type="checkbox" value="4" name="check-genre" id="chkbox-4" />
+                                            <label class="form-label" for="chkbox-4">Student Annotation</label> <br />
+                                            <input type="checkbox" value="5" name="check-genre" id="chkbox-5" />
+                                            <label class="form-label" for="chkbox-5">File Upload</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Submission Attempts</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <h6>Allowed Attempts</h6>
+                                            <select class="mb-3">
+                                                <option value="VAL1">Value 1</option>
+                                                <option value="GRADEBOOK" selected>Unlimited</option>
+                                                <option value="VAL3">Value 3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Plagiarism Review</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <select>
+                                                <option value="VAL1">Value 1</option>
+                                                <option value="GRADEBOOK" selected>None</option>
+                                            </select>
+                                            <hr>
+                                            <h6>Show reports to students</h6>
+                                            <select>
+                                                <option value="VAL1">Value 1</option>
+                                                <option value="GRADEBOOK" selected>Immedietly</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Group Assignment</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <input type="checkbox" value="1" name="check-genre" id="chkbox-1" />
+                                            <label class="form-label" for="chkbox-1">This is a group Assignment</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Peer Reviews</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <input type="checkbox" value="1" name="check-genre" id="chkbox-1" />
+                                            <label class="form-label" for="chkbox-1">Require Peer Reviews</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key">Assign</td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div class="p-2" style="border-style: groove; border-radius: 3%;">
+                                            <h6>Assign to</h6>
+                                            <input class="form-control" type="text" value="Everyone" />
+                                            <h6 class="mt-3">Due</h6>
+                                            <input class="form-control" type="date" id="text-fields-dob" value="2000-01-21" />
+                                            <div class="wd-make-flex mt-3">
+                                                <div class="me-3">
+                                                    <h6>Available from</h6>
+                                                    <input class="form-control" type="date" id="text-fields-af" value="2000-01-21" />
+                                                </div>
+                                                <div>
+                                                    <h6>Until</h6>
+                                                    <input class="form-control" type="date" id="text-fields-ad" value="2000-01-21" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-assignment-edit-table-key"></td>
+                                    <td class="wd-assignment-edit-table-value">
+                                        <div>
+                                            <a href="./index.html">
+                                                <button class="btn btn-light">Cancel</button>
+                                            </a>
+                                            <button class="btn btn-danger">Save</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

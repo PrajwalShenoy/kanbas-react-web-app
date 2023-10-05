@@ -156,6 +156,108 @@
 
 
 /* ========================================================================== */
+/* Courses */
+.wd-main-breadcrumbs-nav {
+    --bs-breadcrumb-divider: '>';
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wd-main-breadcrumbs-nav > ol > li > a{
+    text-decoration: none;
+    color: rgb(236, 48, 48);
+}
+
+.wd-hamburger {
+    color: rgb(236, 48, 48);
+    font-size: 25px;
+}
+
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* Assignment */
+
+.wd-assignment-main-panel {
+    width: -webkit-fill-available;
+    /* width: 1200px; */
+    padding-right: 30px;
+}
+
+.wd-assignment-list-heading {
+    width: 800px;
+    height: 80px;
+}
+
+.wd-assignment-list-heading > div {
+    display: flex;
+}
+
+.wd-assignment-list-heading-title {
+    float: left;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wd-assignment-list-heading-buttons {
+    float: right;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wd-page-items {
+    width: 800px;
+}
+
+.wd-assignment-list {
+    width: 800px;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left-width: 5px;
+    border-left-color: rgb(35, 139, 14);
+    list-style: none;
+}
+
+.wd-assignment-list > li {
+    border-style: groove;
+    border-left: 0;
+    border-top-color: #f3f3f3;
+    border-bottom-color: #f3f3f3;
+    border-right-color: #f3f3f3;
+    min-height: 60px;
+}
+
+.wd-assignment-list > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.wd-assignment-list > li > a > div {
+    font-size: 20px;
+}
+
+.wd-assignment-edit-table {
+
+}
+
+.wd-assignment-edit-table-key {
+    text-align: right;
+    /* width: 100px; */
+}
+
+.wd-assignment-edit-table-value {
+    text-align: left;
+    /* width: max-content; */
+}
+
+/* ========================================================================== */
+/* ========================================================================== */
 /* ========================================================================== */
 
 .box {
