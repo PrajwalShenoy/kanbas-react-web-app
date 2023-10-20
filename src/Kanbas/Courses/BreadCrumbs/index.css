@@ -12,7 +12,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.wd-main-breadcrumbs-nav > ol > li > a{
+.wd-main-breadcrumbs-nav-link {
     text-decoration: none;
     color: rgb(236, 48, 48);
 }

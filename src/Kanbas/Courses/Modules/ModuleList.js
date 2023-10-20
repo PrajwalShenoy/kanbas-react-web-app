@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlinePlus } from 'react-icons/ai';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, Link } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
 
@@ -22,8 +22,10 @@ function ModuleList() {
                                 Published
                             </button>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Published All</a></li>
-                                <li><a className="dropdown-item" href="#">Published None</a></li>
+                                {/* <li><a className="dropdown-item" href="#">Published All</a></li>
+                                <li><a className="dropdown-item" href="#">Published None</a></li> */}
+                                <li><Link className="dropdown-item" to="#">Published All</Link></li>
+                                <li><Link className="dropdown-item" to="#">Published None</Link></li>
                             </ul>
                             <button type="button" className="btn btn-danger"><AiOutlinePlus /> Module</button>
                             <button type="button" className="btn btn-light">
@@ -93,10 +95,14 @@ function ModuleList() {
 
                     <div className="list-group">
                         <h2 className="list-group-item list-group-item-light">Coming Up</h2>
-                        <a href="#" className="list-group-item list-group-item-action wd-red-link">View Calendar</a>
+                        {/* <a href="#" className="list-group-item list-group-item-action wd-red-link">View Calendar</a>
                         <a href="#" className="list-group-item list-group-item-action wd-red-link">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
                         <a href="#" className="list-group-item list-group-item-action wd-red-link">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
-                        <a href="#" className="list-group-item list-group-item-action wd-red-link">CS5610 06 SP23 Lecture Sep 11 at 6pm</a>
+                        <a href="#" className="list-group-item list-group-item-action wd-red-link">CS5610 06 SP23 Lecture Sep 11 at 6pm</a> */}
+                        <Link to="#" className="list-group-item list-group-item-action wd-red-link">View Calendar</Link>
+                        <Link to="#" className="list-group-item list-group-item-action wd-red-link">Lecture CS4550.12631.202410 Sep 7 at 11:45am</Link>
+                        <Link to="#" className="list-group-item list-group-item-action wd-red-link">Lecture CS4550.12631.202410 Sep 11 at 11:45am</Link>
+                        <Link to="#" className="list-group-item list-group-item-action wd-red-link">CS5610 06 SP23 Lecture Sep 11 at 6pm</Link>
                     </div>
                 </div>
             } 

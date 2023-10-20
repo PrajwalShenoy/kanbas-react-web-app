@@ -1,6 +1,5 @@
 import React from 'react';
-import db from "../../Kanbas/Database";
-import { useParams, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import BreadCrumbs from "./BreadCrumbs";
 import CourseNavigation from "./CourseNavigation";
 import ModuleList from './Modules/ModuleList';
@@ -9,7 +8,7 @@ import AssignmentEditor from './Assignments/AssignmentEditor';
 
 
 function Courses() {
-    const { courseId } = useParams();
+    // const { courseId } = useParams();
     // const course = db.courses.find((course) => course._id === courseId);
     return (
         <div className="wd-secondary-frame">
