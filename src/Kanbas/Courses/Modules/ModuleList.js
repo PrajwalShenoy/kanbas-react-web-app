@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlinePlus } from 'react-icons/ai';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-import React from "react";
 import { useParams, useLocation } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
