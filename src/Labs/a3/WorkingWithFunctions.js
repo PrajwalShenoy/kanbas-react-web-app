@@ -1,3 +1,4 @@
+import React from "react";
 import ES5Functions from "./ES5Functions";
 import ArrowFunctions from "./ArrowFunctions";
 import ImpliedReturn from "./ImpliedReturn";

@@ -10,7 +10,7 @@ import AssignmentEditor from './Assignments/AssignmentEditor';
 
 function Courses() {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    // const course = db.courses.find((course) => course._id === courseId);
     return (
         <div className="wd-secondary-frame">
             <div className="row">

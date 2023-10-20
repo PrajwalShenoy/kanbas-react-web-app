@@ -1,3 +1,5 @@
+import React from "react";
+
 function TernaryOperator() {
     let loggedIn = true;
     return (

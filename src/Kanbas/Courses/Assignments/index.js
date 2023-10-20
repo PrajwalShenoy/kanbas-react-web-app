@@ -8,7 +8,7 @@ import "./index.css";
 function Assignments() {
     const { courseId } = useParams();
     const allAssignments = db.assignments;
-    const courseAssignments = allAssignments.filter((assignment) => (assignment.course === courseId));
+    // const courseAssignments = allAssignments.filter((assignment) => (assignment.course === courseId));
     console.log(allAssignments.filter((assignment) => (assignment.course === courseId)));
     return (
         <div className="wd-assignment-main-panel mb-5">

@@ -1,3 +1,5 @@
+import React from "react";
+
 function ForLoops() {
     let stringArray1 = ['string1', 'string3'];
     let stringArray2 = [];

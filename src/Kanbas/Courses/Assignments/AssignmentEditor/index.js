@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
-import db from "../../../Database";
+// import db from "../../../Database";
 import { SlOptionsVertical } from "react-icons/sl";
 import { AiFillCheckCircle } from "react-icons/ai";
 
@@ -9,8 +9,8 @@ function AssignmentEditor() {
     const { courseId } = useParams();
     console.log(courseId);
     console.log(assignmentId);
-    const assignment = db.assignments.find(
-        (assignment) => assignment._id === assignmentId);
+    // const assignment = db.assignments.find(
+    //     (assignment) => assignment._id === assignmentId);
 
 
     const navigate = useNavigate();
