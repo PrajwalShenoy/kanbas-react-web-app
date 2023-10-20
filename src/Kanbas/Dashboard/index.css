@@ -1,0 +1,26 @@
+.wd-name-header {
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wd-course-card {
+    max-width: 350px;
+    min-width: 350px;
+    max-height: 400px;
+    min-height: 400px;
+}
+
+.wd-secondary-frame {
+    width: 100vw;
+}
+
+.wd-card-title {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.wd-card-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

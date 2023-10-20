@@ -1,0 +1,176 @@
+[
+    {
+        "course": "RS101",
+        "content": [
+            {
+                "weekNumber": "Week 0 - Intro",
+                "weekComponents": [
+                    {
+                        "partName": "LEARNING OBJECTIVES",
+                        "partContent": [
+                            "Introduction to the course",
+                            "Learn what is Web Development",
+                            "Creating a development environment",
+                            "Creating a Web Application",
+                            "Getting started with the 1st assignment"
+                        ]
+                    },
+                    {
+                        "partName": "READING",
+                        "partContent": [
+                            "Full Stack Developer - Chapter 1 - Introduction",
+                            "Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML"
+                        ]
+                    },
+                    {
+                        "partName": "SLIDES",
+                        "partContent": [
+                            "Introduction to Web Development",
+                            "Creating an HTTP server with Node.js",
+                            "Creating a React Application",
+                            "Commit your source to GitHub.com",
+                            "Deploying to Netlify",
+                            "Deploying multiple branches in Netlify"
+                        ]
+                    }
+                ]
+            },
+            {
+                "weekNumber": "Week 1 - HTML",
+                "weekComponents": [
+                    {
+                        "partName": "LEARNING OBJECTIVES",
+                        "partContent": [
+                            "Learn how to create user interfaces with HTML",
+                            "Keep working on assignment 1",
+                            "Deploy the assignment to Netlify"
+                        ]
+                    },
+                    {
+                        "partName": "READING",
+                        "partContent": [
+                            "Full Stack Developer - Chapter 1 - Introduction",
+                            "Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "course": "RS102",
+        "content": [
+            {
+                "weekNumber": "Week 0 - Intro",
+                "weekComponents": [
+                    {
+                        "partName": "LEARNING OBJECTIVES",
+                        "partContent": [
+                            "Introduction to the course",
+                            "Learn what is Web Development",
+                            "Creating a development environment",
+                            "Creating a Web Application",
+                            "Getting started with the 1st assignment"
+                        ]
+                    },
+                    {
+                        "partName": "READING",
+                        "partContent": [
+                            "Full Stack Developer - Chapter 1 - Introduction",
+                            "Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML"
+                        ]
+                    },
+                    {
+                        "partName": "SLIDES",
+                        "partContent": [
+                            "Introduction to Web Development",
+                            "Creating an HTTP server with Node.js",
+                            "Creating a React Application",
+                            "Commit your source to GitHub.com",
+                            "Deploying to Netlify",
+                            "Deploying multiple branches in Netlify"
+                        ]
+                    }
+                ]
+            },
+            {
+                "weekNumber": "Week 1 - HTML",
+                "weekComponents": [
+                    {
+                        "partName": "LEARNING OBJECTIVES",
+                        "partContent": [
+                            "Learn how to create user interfaces with HTML",
+                            "Keep working on assignment 1",
+                            "Deploy the assignment to Netlify"
+                        ]
+                    },
+                    {
+                        "partName": "READING",
+                        "partContent": [
+                            "Full Stack Developer - Chapter 1 - Introduction",
+                            "Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "course": "RS103",
+        "content": [
+            {
+                "weekNumber": "Week 0 - Intro",
+                "weekComponents": [
+                    {
+                        "partName": "LEARNING OBJECTIVES",
+                        "partContent": [
+                            "Introduction to the course",
+                            "Learn what is Web Development",
+                            "Creating a development environment",
+                            "Creating a Web Application",
+                            "Getting started with the 1st assignment"
+                        ]
+                    },
+                    {
+                        "partName": "READING",
+                        "partContent": [
+                            "Full Stack Developer - Chapter 1 - Introduction",
+                            "Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML"
+                        ]
+                    },
+                    {
+                        "partName": "SLIDES",
+                        "partContent": [
+                            "Introduction to Web Development",
+                            "Creating an HTTP server with Node.js",
+                            "Creating a React Application",
+                            "Commit your source to GitHub.com",
+                            "Deploying to Netlify",
+                            "Deploying multiple branches in Netlify"
+                        ]
+                    }
+                ]
+            },
+            {
+                "weekNumber": "Week 1 - HTML",
+                "weekComponents": [
+                    {
+                        "partName": "LEARNING OBJECTIVES",
+                        "partContent": [
+                            "Learn how to create user interfaces with HTML",
+                            "Keep working on assignment 1",
+                            "Deploy the assignment to Netlify"
+                        ]
+                    },
+                    {
+                        "partName": "READING",
+                        "partContent": [
+                            "Full Stack Developer - Chapter 1 - Introduction",
+                            "Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,79 @@
+.wd-white-text {
+    color: #ffffff;
+}
+
+.wd-black-text {
+    color: #000000;
+}
+
+.wd-align-items-center {
+    align-items: center;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-border-radius {
+    border-radius: 20%;
+}
+
+.wd-assignment-main-panel {
+    /* width: -webkit-fill-available; */
+    width: 1500px;
+    padding-right: 30px;
+}
+
+.wd-assignment-list-heading {
+    width: 800px;
+    height: 80px;
+}
+
+.wd-assignment-list-heading > div {
+    display: flex;
+}
+
+.wd-assignment-list-heading-title {
+    float: left;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wd-assignment-list-heading-buttons {
+    float: right;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wd-assignment-list {
+    width: 800px;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left-width: 5px;
+    border-left-color: rgb(35, 139, 14);
+    list-style: none;
+}
+
+.wd-assignment-list-item {
+    border-style: groove;
+    border-left: 0;
+    border-top-color: #f3f3f3;
+    border-bottom-color: #f3f3f3;
+    border-right-color: #f3f3f3;
+    min-height: 60px;
+}
+
+.wd-assignment-list-item-link {
+    text-decoration: none;
+    color: black;
+}
+
+.wd-assignment-list-item-link-div {
+    font-size: 20px;
+}

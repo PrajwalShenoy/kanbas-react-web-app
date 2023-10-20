@@ -1,0 +1,14 @@
+.wd-home-list {
+    width: 1200px;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left-width: 5px;
+    border-left-color: rgb(35, 139, 14);
+    list-style: none;
+}
+
+.wd-text-left-align {
+    text-align: left;
+}

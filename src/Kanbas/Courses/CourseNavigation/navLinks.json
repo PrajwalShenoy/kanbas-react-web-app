@@ -1,0 +1,74 @@
+[
+    {
+        "label": "Home",
+        "link": "home"
+    },
+    {
+        "label": "Modules",
+        "link": "modules"
+    },
+    {
+        "label": "Piazza",
+        "link": "piazza"
+    },
+    {
+        "label": "Zoom Meetings",
+        "link": "zoom-meetings"
+    },
+    {
+        "label": "Assignments",
+        "link": "assignments"
+    },
+    {
+        "label": "Quizzes",
+        "link": "quizzes"
+    },
+    {
+        "label": "Grades",
+        "link": "grades"
+    },
+    {
+        "label": "People",
+        "link": "people"
+    },
+    {
+        "label": "Penapto Videos",
+        "link": "penapto-videos"
+    },
+    {
+        "label": "Discussions",
+        "link": "discussions"
+    },
+    {
+        "label": "Announcements",
+        "link": "announcements"
+    },
+    {
+        "label": "Pages",
+        "link": "pages"
+    },
+    {
+        "label": "Files",
+        "link": "files"
+    },
+    {
+        "label": "Rubrics",
+        "link": "rubrics"
+    },
+    {
+        "label": "Outcomes",
+        "link": "outcomes"
+    },
+    {
+        "label": "Collaborations",
+        "link": "collaborations"
+    },
+    {
+        "label": "Syllabus",
+        "link": "syllabus"
+    },
+    {
+        "label": "Settings",
+        "link": "settings"
+    }
+]

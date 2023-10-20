@@ -1,0 +1,4 @@
+.wd-secondary-frame {
+    display: block;
+    width: -webkit-fill-available;
+}

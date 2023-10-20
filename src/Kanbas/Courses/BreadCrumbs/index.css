@@ -1,0 +1,23 @@
+.wd-hamburger {
+    color: rgb(236, 48, 48);
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+.wd-main-breadcrumbs-nav {
+    --bs-breadcrumb-divider: '>';
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wd-main-breadcrumbs-nav > ol > li > a{
+    text-decoration: none;
+    color: rgb(236, 48, 48);
+}
+
+.wd-extend-horizontal {
+    display: flex;
+    width: 100%;
+}
