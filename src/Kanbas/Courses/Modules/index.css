@@ -12,3 +12,8 @@
 .wd-text-left-align {
     text-align: left;
 }
+
+.wd-name-header {
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}

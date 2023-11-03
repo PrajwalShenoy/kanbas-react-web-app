@@ -21,10 +21,10 @@ function Courses() {
                 </div>
                 <div className="col me-3">
                     <Routes>
-                        <Route path="/" element={<Navigate to="Home" />} />
-                        <Route path="Home" element={<ModuleList />} />
-                        <Route path="Modules" element={<ModuleList />} />
-                        <Route path="Assignments" element={<Assignments />} />
+                        <Route path="/" element={<Navigate to="home" />} />
+                        <Route path="home" element={<ModuleList />} />
+                        <Route path="modules" element={<ModuleList />} />
+                        <Route path="assignments" element={<Assignments />} />
                         <Route
                             path="Assignments/:assignmentId"
                             element={<AssignmentEditor />}
