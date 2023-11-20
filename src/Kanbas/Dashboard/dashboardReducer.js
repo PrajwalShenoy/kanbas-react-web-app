@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import db from "../Database";
 
 const initialState = {
-    courses: db.courses,
+    courses: [],
     course: {
         _id: "",
         name: "",
@@ -51,8 +51,11 @@ const dashboardSlice = createSlice({
         setCourse: (state, action) => {
             state.course = action.payload;
         },
+        setCourses: (state, action) => {
+            state.courses = action.payload;
+        }
     }
 });
 
-export const { addCourse, editCourse, deleteCourse, updateCourse, setCourse } = dashboardSlice.actions;
+export const { addCourse, deleteCourse, updateCourse, setCourse, setCourses } = dashboardSlice.actions;
 export default dashboardSlice.reducer;

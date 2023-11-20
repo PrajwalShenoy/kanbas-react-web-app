@@ -1,9 +1,19 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addCourse, updateCourse, setCourse } from "./dashboardReducer";
+import axios from "axios";
+
 
 function DashboardCourseForm() {
     const { course } = useSelector((state) => state.dashboardReducer);
     const dispatch = useDispatch();
+    const URL = "http://localhost:4000/api/courses";
+    const createCourseApi = async (course) => {
+        const response = await axios.post(URL, course);
+    };
+    const updateCourseApi = async (course) => {
+        // console.log(`${URL}/${course._id}`);
+        const response = await axios.put(`${URL}/${course._id}`, course);
+    };
     return (
         <div>
             <h2 className="wd-name-header mt-0">Manage courses</h2>
@@ -23,8 +33,14 @@ function DashboardCourseForm() {
                 <input type="date" className="form-control"
                     onChange={(e) => dispatch(setCourse({ ...course, endDate: e.target.value.toString() }))} />
             </div>
-            <button className="btn btn-success m-1" onClick={() => dispatch(addCourse(course))}>Create Course</button>
-            <button className="btn btn-warning m-1" onClick={() => dispatch(updateCourse(course))}>Update</button>
+            <button className="btn btn-success m-1" onClick={() => {
+                dispatch(addCourse(course));
+                createCourseApi(course);
+            }}>Create Course</button>
+            <button className="btn btn-warning m-1" onClick={() => {
+                dispatch(updateCourse(course));
+                updateCourseApi(course);
+            }}>Update</button>
         </div>
     )
 }

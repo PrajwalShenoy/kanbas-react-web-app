@@ -4,7 +4,7 @@ import db from "../../Database";
 
 const initialState = {
     display: false,
-    modules: db.modules,
+    modules: [],
     module: {
         course: "",
         moduleName: "New Module",
@@ -27,8 +27,8 @@ const moduleSlice = createSlice({
         },
         addModule: (state, action) => {
             const newModules = [
-                ...state.modules,
-                action.payload
+                action.payload,
+                ...state.modules
             ];
             state.modules = newModules;
             state.module = {
@@ -38,7 +38,7 @@ const moduleSlice = createSlice({
         },
         updateModule: (state, action) => {
             state.modules = state.modules.map((m) => {
-                if (m.moduleName === action.payload.moduleName) {
+                if (m._id === action.payload._id) {
                     return action.payload;
                 }
                 return m;
@@ -47,9 +47,12 @@ const moduleSlice = createSlice({
                 moduleName: "",
                 moduleDescription: ""
             }
+        },
+        setModules: (state, action) => {
+            state.modules = action.payload;
         }
     }
 });
 
 export default moduleSlice.reducer;
-export const { toggleDisplay, deleteModule, setModule, addModule, updateModule } = moduleSlice.actions;
+export const { toggleDisplay, deleteModule, setModule, addModule, updateModule, setModules } = moduleSlice.actions;
