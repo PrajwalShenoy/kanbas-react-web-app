@@ -3,8 +3,11 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { useParams, useLocation, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleDisplay, deleteModule, setModule, addModule, updateModule } from "./moduleReducer";
+import { toggleDisplay, deleteModule, setModule, addModule, updateModule, setModules } from "./moduleReducer";
+import { createModule, deleteModuleApi, updateModuleApi } from "./client";
+import { useEffect } from "react";
 import "./index.css";
+import axios from "axios";
 
 function ModuleList() {
     const { courseId } = useParams();
@@ -13,6 +16,16 @@ function ModuleList() {
     const { modules } = useSelector((state) => state.moduleReducer);
     const { module } = useSelector((state) => state.moduleReducer);
     const dispatch = useDispatch();
+    const URL = "http://localhost:4000/api/courses";
+    const findCourseByCourseId = async (courseId) => {
+        const response = await axios.get(`${URL}/${courseId}`);
+        if (response) {
+            dispatch(setModules(response.data));
+        }
+    };
+    useEffect(() => {
+        findCourseByCourseId(courseId);
+    }, []);
     return (
         <div>
             <div className="d-flex">
@@ -33,7 +46,8 @@ function ModuleList() {
                                 <button type="button" className="btn btn-light">
                                     <BsThreeDotsVertical />
                                 </button>
-                            </div></div>
+                            </div>
+                        </div>
                     </ul>
                     <div className="d-flex">
                         <div className="col">
@@ -42,24 +56,26 @@ function ModuleList() {
                                     <h3 className="wd-name-header">Edit Modules</h3>
                                     <div className="d-block">
                                         <input type="text" className="form-control m-1" placeholder="Module Name" value={module.moduleName}
-                                        onChange={(e) => {
-                                            dispatch(setModule({ ...module, moduleName: e.target.value }))
-                                        }}/>
+                                            onChange={(e) => {
+                                                dispatch(setModule({ ...module, moduleName: e.target.value }))
+                                            }} />
                                         <textarea className="form-control m-1" rows="3" placeholder="Module Description" value={module.moduleDescription}
-                                        onChange={(e) => {
-                                            dispatch(setModule({ ...module, moduleDescription: e.target.value }))
-                                        }}/>
+                                            onChange={(e) => {
+                                                dispatch(setModule({ ...module, moduleDescription: e.target.value }))
+                                            }} />
                                     </div>
                                     <div>
                                         <div>
                                             <button className="btn btn-success m-1" onClick={
                                                 () => {
-                                                    dispatch(addModule({...module, course: courseId},));
+                                                    createModule(courseId, module);
+                                                    dispatch(addModule({ ...module, course: courseId },));
                                                 }
                                             }>Add</button>
                                             <button className="btn btn-warning m-1" onClick={
                                                 () => {
-                                                    dispatch(updateModule({...module, course: courseId},));
+                                                    updateModuleApi(module._id, module);
+                                                    dispatch(updateModule({ ...module, course: courseId }));
                                                 }
                                             }>Update</button>
                                         </div>
@@ -68,6 +84,28 @@ function ModuleList() {
                             }
                             <ul>
                                 {
+                                    modules.map((m) => (
+                                        <div className="wd-home-list list-group mb-4">
+                                            <li className="list-group-item list-group-item-light">{m.moduleName}</li>
+                                            <ul className="list-group">
+                                                <li className="list-group-item">{m.moduleDescription}</li>
+                                            </ul>
+                                            {
+                                                display &&
+                                                <div className="d-flex">
+                                                    <button className="btn btn-danger m-1"
+                                                        onClick={() => {
+                                                            deleteModuleApi(m._id);
+                                                            dispatch(deleteModule(m));
+                                                        }}>Delete</button>
+                                                    <button className="btn btn-success m-1"
+                                                        onClick={() => dispatch(setModule(m))}>Edit</button>
+                                                </div>
+                                            }
+                                        </div>
+                                    ))
+                                }
+                                {/* {
                                     modules.filter((m) => m.course === courseId).map((m) => (
                                         <div className="wd-home-list list-group mb-4">
                                             <li className="list-group-item list-group-item-light">{m.moduleName}</li>
@@ -85,7 +123,7 @@ function ModuleList() {
                                             }
                                         </div>
                                     ))
-                                }
+                                } */}
                             </ul>
                         </div>
                     </div>

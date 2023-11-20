@@ -1,13 +1,27 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Link } from "react-router-dom";
 import { FiEdit2 } from 'react-icons/fi';
 import { useSelector, useDispatch } from "react-redux";
+import { setCourses } from "./dashboardReducer";
+import { useState, useEffect } from "react";
 import DashboardCourseForm from "./DashboardCourseForm";
 import DashboardItems from "./DashboardItems";
+import axios from "axios";
 import "./index.css";
 
 function Dashboard() {
     const { courses } = useSelector((state) => state.dashboardReducer);
+    const dispatch = useDispatch();
+    // const [courses, setCourses] = useState([]);
+    const URL = "http://localhost:4000/api/courses";
+    const findAllCourses = async () => {
+        const response = await axios.get(URL);
+        dispatch(setCourses(response.data));
+    };
+    useEffect(() => {
+        findAllCourses();
+    }, []);
+
     return (
         <div className="wd-secondary-frame">
             <h3 className="wd-name-header">Dashboard</h3>
