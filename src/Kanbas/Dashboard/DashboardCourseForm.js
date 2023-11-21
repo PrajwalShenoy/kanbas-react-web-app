@@ -6,7 +6,8 @@ import axios from "axios";
 function DashboardCourseForm() {
     const { course } = useSelector((state) => state.dashboardReducer);
     const dispatch = useDispatch();
-    const URL = "http://localhost:4000/api/courses";
+    const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+    const URL = `${BASE_URL}/api/courses`;
     const createCourseApi = async (course) => {
         const response = await axios.post(URL, course);
     };

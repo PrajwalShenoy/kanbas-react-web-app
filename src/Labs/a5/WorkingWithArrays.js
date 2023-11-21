@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function WorkingWithArrays() {
-    const API = "http://localhost:4000/a5/todos";
+    const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+    const API = `${BASE_URL}/a5/todos`;
     const [errorMessage, setErrorMessage] = useState(null);
     const [todo, setTodo] = useState({
         id: 1,

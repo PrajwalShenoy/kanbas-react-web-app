@@ -4,7 +4,8 @@ import axios from "axios";
 
 function DashboardItems({ course }) {
     const dispatch = useDispatch();
-    const URL = "http://localhost:4000/api/courses";
+    const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+    const URL = `${BASE_URL}/api/courses`;
     const deleteCourseApi = async (course) => {
         const response = axios.delete(`${URL}/${course._id}`);
     };

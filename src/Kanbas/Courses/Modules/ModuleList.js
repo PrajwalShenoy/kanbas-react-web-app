@@ -16,7 +16,8 @@ function ModuleList() {
     const { modules } = useSelector((state) => state.moduleReducer);
     const { module } = useSelector((state) => state.moduleReducer);
     const dispatch = useDispatch();
-    const URL = "http://localhost:4000/api/courses";
+    const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+    const URL = `${BASE_URL}/api/courses`;
     const findCourseByCourseId = async (courseId) => {
         const response = await axios.get(`${URL}/${courseId}`);
         if (response) {
