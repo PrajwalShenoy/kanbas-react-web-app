@@ -21,6 +21,7 @@ function Kanbas() {
                     <Routes>
                         <Route path="Account" element={<Account/>} />
                         <Route path="Account/users" element={<UserTable/>} />
+                        <Route path="Account/users/:id/users" element={<UserTable/>} />
                         <Route path="Account/:id" element={<Account/>} />
                         <Route path="Dashboard" element={<Dashboard/>} />
                         <Route path="Courses/:courseId/*" element={<Courses/>} />

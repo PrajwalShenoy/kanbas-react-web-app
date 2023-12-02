@@ -14,6 +14,9 @@ function Account() {
     const fetchAccount = async () => {
         const userDetails = await client.account();
         console.log("User info " + userDetails);
+        if (!userDetails) {
+            navigate("../signin");
+        }
         setAccount(userDetails);
     };
     const signout = async () => {
@@ -36,26 +39,31 @@ function Account() {
             {account && (
                 <div style={{display: "flex", flexDirection: "column"}}>
                     <input value={account.password}
+                        placeholder='password'
                         onChange={(e) => setAccount({
                             ...account,
                             password: e.target.value
                         })} />
                     <input value={account.firstName}
+                        placeholder='First Name'
                         onChange={(e) => setAccount({
                             ...account,
                             firstName: e.target.value
                         })} />
                     <input value={account.lastName}
+                        placeholder='Last Name'
                         onChange={(e) => setAccount({
                             ...account,
                             lastName: e.target.value
                         })} />
                     <input value={account.dob}
+                        placeholder='Date of Birth'
                         onChange={(e) => setAccount({
                             ...account,
                             dob: e.target.value
                         })} />
                     <input value={account.email}
+                        placeholder='Email'
                         onChange={(e) => setAccount({
                             ...account,
                             email: e.target.value

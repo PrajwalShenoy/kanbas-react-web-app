@@ -11,8 +11,12 @@ export const signin = async (credentials) => {
     return response.data;
 };
 export const account = async () => {
-    const response = await request.post(`${USERS_URL}/account`);
-    return response.data;
+    try {
+        const response = await request.post(`${USERS_URL}/account`);
+        return response.data;
+    } catch (error) {
+        return null;
+    }
 };
 
 export const updateUser = async (user) => {

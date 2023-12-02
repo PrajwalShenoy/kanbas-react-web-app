@@ -58,14 +58,14 @@ function UserTable() {
                     </tr>
                     <tr>
                         <td>
-                            <input value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })} />
-                            <input value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })} />
+                            <input value={user.username} placeholder="Username" onChange={(e) => setUser({ ...user, username: e.target.value })} />
+                            <input value={user.password} placeholder="Password" onChange={(e) => setUser({ ...user, password: e.target.value })} />
                         </td>
                         <td>
-                            <input value={user.firstName} onChange={(e) => setUser({ ...user, firstName: e.target.value })} />
+                            <input value={user.firstName} placeholder="First Name" onChange={(e) => setUser({ ...user, firstName: e.target.value })} />
                         </td>
                         <td>
-                            <input value={user.lastName} onChange={(e) => setUser({ ...user, lastName: e.target.value })} />
+                            <input value={user.lastName} placeholder="Last Name" onChange={(e) => setUser({ ...user, lastName: e.target.value })} />
                         </td>
                         <td>
                             <select value={user.role} onChange={(e) => setUser({ ...user, role: e.target.value })}>
