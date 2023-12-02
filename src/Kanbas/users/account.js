@@ -15,13 +15,13 @@ function Account() {
         const userDetails = await client.account();
         console.log("User info " + userDetails);
         if (!userDetails) {
-            navigate("../signin");
+            navigate("/Kanbas/signin");
         }
         setAccount(userDetails);
     };
     const signout = async () => {
         await client.signout();
-        navigate("../signin");
+        navigate("/Kanbas/signin");
     };
     useEffect(() => {
         if (id) {

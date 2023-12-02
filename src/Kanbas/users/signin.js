@@ -8,7 +8,8 @@ function Signin() {
     const navigate = useNavigate();
     const signin = async () => {
         const user = await client.signin(credentials);
-        navigate('../Account');
+        // navigate('../Account');
+        navigate('/Kanbas/Account');
     };
     return (
         <div style={{display: "flex", flexDirection: "column", width:"400px"}}>

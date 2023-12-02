@@ -12,7 +12,8 @@ function Signup() {
         try {
             await client.signup(credentials);
             console.log("User signed up");
-            navigate("../Account");
+            // navigate("../Account");
+            navigate("/Kanbas/Account");
         } catch (err) {
             setError(err.response.data.message);
         }
