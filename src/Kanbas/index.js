@@ -19,14 +19,14 @@ function Kanbas() {
                 </div>
                 <div style={{flexGrow: "1"}}>
                     <Routes>
-                        <Route path="/Kanbas/Account" element={<Account/>} />
-                        <Route path="/Kanbas/Account/users" element={<UserTable/>} />
-                        <Route path="/Kanbas/Account/users/:id/users" element={<UserTable/>} />
-                        <Route path="/Kanbas/Account/:id" element={<Account/>} />
-                        <Route path="/Kanbas/Dashboard" element={<Dashboard/>} />
-                        <Route path="/Kanbas/Courses/:courseId/*" element={<Courses/>} />
-                        <Route path="/Kanbas/signin" element={<Signin/>} /> 
-                        <Route path="/Kanbas/signup" element={<Signup/>} /> 
+                        <Route path="/Account" element={<Account/>} />
+                        <Route path="/Account/users" element={<UserTable/>} />
+                        <Route path="/Account/users/:id/users" element={<UserTable/>} />
+                        <Route path="/Account/:id" element={<Account/>} />
+                        <Route path="/Dashboard" element={<Dashboard/>} />
+                        <Route path="/Courses/:courseId/*" element={<Courses/>} />
+                        <Route path="/signin" element={<Signin/>} /> 
+                        <Route path="/signup" element={<Signup/>} /> 
                     </Routes>
                 </div>
             </div>
