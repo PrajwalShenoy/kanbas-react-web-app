@@ -9,7 +9,10 @@ function Signin() {
     const signin = async () => {
         const user = await client.signin(credentials);
         // navigate('../Account');
+        console.log("User signed in");
+        console.log(user);
         navigate('/Kanbas/Account');
+        console.log("Redirected to Account");
     };
     return (
         <div style={{display: "flex", flexDirection: "column", width:"400px"}}>
